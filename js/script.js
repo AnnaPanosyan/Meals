@@ -3,7 +3,7 @@ let random = 0;
 
 async function getData() {
   const res = await fetch(
-    "https://api.spoonacular.com/mealplanner/generate?apiKey=ca67fc9b69c84003a944a7fb53482d34"
+    "https://api.spoonacular.com/mealplanner/generate?apiKey=6e49cbbb74ad4068b1fef220e69d43d6"
   );
   const data = await res.json();
   draw(data);
@@ -41,7 +41,7 @@ function draw(data) {
   arr2.push(servingsL);
   arr2.push(servingsD);
 
-  let nut = document.getElementsByClassName("nutrients");
+  //let nut = document.getElementsByClassName("nutrients");
   let cal = document.getElementsByClassName("cal");
   let car = document.getElementsByClassName("car");
   let fat = document.getElementsByClassName("fat");
@@ -59,17 +59,21 @@ function draw(data) {
     pro[i].innerHTML = "protein:" + " " + weekDay[random].nutrients.protein;
   }
 }
-let searchInputTxt = document.querySelector('.searchInput').value.trim();
-    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
-    .then(response => response.json())
-    .then(data => {
-      let recipes="";
-      let allrecipes=document.querySelector(".allrecipes")
-        for(let i = 0; i < data.meals.length; i++){
-          console.log(data.meals[i].strMeal)
-           recipes += `<h2 class=".recipes">${data.meals[i].strMeal}</h2>`;
-          }
-      allrecipes.innerHTML=recipes
-    })
-  })
-    
+
+let button1 = document.querySelector(".button1");
+button1.addEventListener("click", function () {
+  let searchInputTxt = document.querySelector(".searchInput").value.trim();
+  fetch(
+    `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      let recipes = "";
+      let allrecipes = document.querySelector(".allrecipes");
+      for (let i = 0; i < data.meals.length; i++) {
+        console.log(data.meals[i].strMeal);
+        recipes += `<h2 class=".recipes">${data.meals[i].strMeal}</h2>`;
+      }
+      allrecipes.innerHTML = recipes;
+    });
+});
