@@ -59,5 +59,4 @@ function draw(data) {
     pro[i].innerHTML = "protein:" + " " + weekDay[random].nutrients.protein;
   }
 }
-getDataRecipes();
 
