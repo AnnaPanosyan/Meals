@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .conteiner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/nk1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: auto;
+  }
+  .menu {
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 15px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .home {
+    color: rgb(58, 35, 40);
+    margin-right: 50px;
+  }
+  .recipes {
+    color: rgb(58, 35, 40);
+    margin-right: 40px;
+  }
+  .mealPlan {
+    color: rgb(58, 35, 40);
+    margin-right: 30px;
+  }
+  #plan {
+    width: 100%;
+    max-height: 1300px;
+   background-image: url(/img/pikist.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+  }
+  .mealPlan2 {
+    font-family: fantasy;
+    color: rgb(228, 219, 221);
+    font-size: 70px;
+    background-color: rgba(61, 36, 24, 0.5);
+  }
+  .div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 60px 0px 20px;
+    height: 320px;
+    width: 1300px;
+  }
+  .div2 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px 10px 30px;
+    height: 320px;
+  }
+  
+  .atr {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    margin: 49px 0px 0px 6px;
+  }
+  .servings {
+    display: flex;
+    flex-direction: row;
+    margin: 13px 9px;
+    font-size: 25px;
+    align-items: center;
+  }
+  .breakfast1 {
+    display: flex;
+    font-size: 25px;
+    color: rgb(116, 81, 81);
+    flex-direction: column;
+    width: 250px;
+    margin: 10px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .clock {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+  }
+  .nutrientsB {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0px 30px 20px;
+    color: rgb(63, 41, 41);
+  }
+  
+  .nutrients {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px 0px 50px;
+    color: rgb(124, 94, 94);
+    font-family: cursive;
+  }
+  
+  .lunch1 {
+    font-size: 25px;
+    color: rgb(116, 81, 81);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px;
+  }
+  
+  .dinner1 {
+    font-size: 25px;
+    color: rgb(116, 81, 81);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px;
+  }
+  .m {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgb(31, 13, 13);
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .mealsImg {
+    width: 250px;
+    height: 250px;
+    background-image: url(/img/brek.jpg);
+  }
+  
+  .home:hover {
+    color: rgb(245, 238, 240);
+  }
+  .recipes:hover {
+    color: rgb(245, 238, 240);
+  }
+  .mealPlan:hover {
+    color: rgb(245, 238, 240);
+  }
+  .menu:hover {
+    background-color: rgba(112, 78, 62, 0.5);
+  }
+  .button {
+    color: rgb(73, 50, 50);
+    border-radius: 10%;
+    margin: 5px 213px 70px 710px;
+    width: 250px;
+    height: 60px;
+    font-family: cursive;
+    font-size: 20px;
+  }
+  .button:hover {
+    background-color: rgb(190, 145, 145);
+    color: cornsilk;
+  }
+  .p:hover {
+    color: cornsilk;
+  }
+  #recipes {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-image: url(/img/nk2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+  }
+
+  
