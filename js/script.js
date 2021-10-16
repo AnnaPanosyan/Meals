@@ -59,4 +59,17 @@ function draw(data) {
     pro[i].innerHTML = "protein:" + " " + weekDay[random].nutrients.protein;
   }
 }
-
+let searchInputTxt = document.querySelector('.searchInput').value.trim();
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
+    .then(response => response.json())
+    .then(data => {
+      let recipes="";
+      let allrecipes=document.querySelector(".allrecipes")
+        for(let i = 0; i < data.meals.length; i++){
+          console.log(data.meals[i].strMeal)
+           recipes += `<h2 class=".recipes">${data.meals[i].strMeal}</h2>`;
+          }
+      allrecipes.innerHTML=recipes
+    })
+  })
+    
