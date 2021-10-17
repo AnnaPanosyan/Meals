@@ -68,12 +68,16 @@ button1.addEventListener("click", function () {
   )
     .then((response) => response.json())
     .then((data) => {
-      let recipes = "";
-      let allrecipes = document.querySelector(".allrecipes");
+     let recipes = "";
+      let allrecipes = document.getElementById("allrecipes");
       for (let i = 0; i < data.meals.length; i++) {
         console.log(data.meals[i].strMeal);
-        recipes += `<h2 class=".recipes">${data.meals[i].strMeal}</h2>`;
+        recipes += ` <div class="div">
+             <img  class = "mealsImg" src = "${data.meals[i].strMealThumb}" alt = "food">
+             <h3 class="recipes">${data.meals[i].strMeal}</h3>
+             </div>`;
       }
       allrecipes.innerHTML = recipes;
     });
 });
+
